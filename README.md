@@ -8,5 +8,10 @@ Recent advances in single-cell RNA sequencing (scRNA-seq) have accelerated the d
 * scikit-learn 0.24.2
 * scipy 1.4.1
 * tensorflow 2.4.1
-# Usage
-* 
+# Usage(Take Spleen for example)
+* First, download the original data from the Releases-Dataset, such as human_Spleen9887_celltype.csv and human_Spleen9887_data.csv, and divide it into training set and test set.
+* Next, use the lda.py file to perform dimensionality reduction of the original data.
+* Then, the Boostmodel-CNN_LDA_Transformer_spleen_save.py file is used to perform the prediction of cell categories, generating a file that contains the likelihood of each category.
+* Finally, the performance of the method is evaluated with testACC_spleen.py and the results are visualized with files in VisualAnalysis.
+# Data availability
+The data used in the method are stored in the Releases-Dataset.
